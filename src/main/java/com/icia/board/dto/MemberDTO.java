@@ -7,6 +7,6 @@ public class MemberDTO {
     Long id;
     String memberEmail;
     String memberPassword;
-    String memberBirthday;
+    String memberBirth;
     String memberMobile;
 }
