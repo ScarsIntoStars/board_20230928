@@ -35,8 +35,10 @@ public class MemberEntity {
         MemberEntity memberEntity = new MemberEntity();
         memberEntity.setId(memberDTO.getId());
         memberEntity.setMemberEmail(memberDTO.getMemberEmail());
-
-
+        memberEntity.setMemberName(memberDTO.getMemberName());
+        memberEntity.setMemberBirth(memberDTO.getMemberBirth());
+        memberEntity.setMemberMobile(memberDTO.getMemberMobile());
+        return memberEntity;
     }
 
 }
