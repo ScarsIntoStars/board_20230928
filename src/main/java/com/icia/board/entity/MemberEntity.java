@@ -2,6 +2,7 @@ package com.icia.board.entity;
 
 import com.icia.board.dto.MemberDTO;
 import lombok.AccessLevel;
+import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -9,6 +10,7 @@ import javax.persistence.*;
 @Entity
 @Table(name = "member_table")
 @Setter(AccessLevel.PRIVATE)
+@Getter
 public class MemberEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
