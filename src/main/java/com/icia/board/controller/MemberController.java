@@ -19,7 +19,8 @@ public class MemberController {
 
     @PostMapping("/member/memberSave")
     public String memberSave(MemberDTO memberDTO){
+        System.out.println(memberDTO);
         memberService.save(memberDTO);
-        return  "/";
+        return  "index";
     }
 }

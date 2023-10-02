@@ -25,17 +25,18 @@ public class MemberEntity {
     @Column(length = 20)
     private String memberName;
 
-    @Column(length=20)
+    @Column(length = 20)
     private String memberBirth;
 
-    @Column(length=20)
+    @Column(length = 20)
     private String memberMobile;
 
 
     // DTO -> Entity
-    public static MemberEntity saveToEntity(MemberDTO memberDTO){
+    public static MemberEntity saveToEntity(MemberDTO memberDTO) {
         MemberEntity memberEntity = new MemberEntity();
         memberEntity.setId(memberDTO.getId());
+        memberEntity.setMemberPassword(memberDTO.getMemberPassword());
         memberEntity.setMemberEmail(memberDTO.getMemberEmail());
         memberEntity.setMemberName(memberDTO.getMemberName());
         memberEntity.setMemberBirth(memberDTO.getMemberBirth());
