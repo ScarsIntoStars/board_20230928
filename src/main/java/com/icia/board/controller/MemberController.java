@@ -33,4 +33,9 @@ public class MemberController {
         model.addAttribute("memberList", memberDTOList);
         return "/memberPages/memberList";
     }
+
+    @GetMapping("/member/memberLogin")
+    public String memberLogin(){
+        return "/memberPages/memberLogin";
+    }
 }
